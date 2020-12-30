@@ -12,3 +12,5 @@ BackJoon
   [step4 : while문](https://github.com/YJun1364/CodingTest/tree/main/CodingTest/backJoon/step4_while)
  <br>
   [step5 : array](https://github.com/YJun1364/CodingTest/tree/main/CodingTest/backJoon/step5_array)
+  <br>
+  [step6 : function](https://github.com/YJun1364/CodingTest/tree/main/CodingTest/backJoon/step6_function)
