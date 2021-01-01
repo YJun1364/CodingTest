@@ -1,8 +1,11 @@
-package Test;
+package test;
 import java.lang.*;
 public class Main{
     public static void main(String[] args){
-        System.out.print("강한친구 대한육군"+"\n"+"강한친구 대한육군");
+       boolean [] arr = new boolean [3];
+       for(int i=0;i<3;i++){
+    	   System.out.println(arr[i]);
+       }
     }
 }
 
