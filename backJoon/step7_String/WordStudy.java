@@ -1,34 +1,32 @@
 package step7_String;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Scanner;
 
 public class WordStudy {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		String word = sc.nextLine();
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		String word = br.readLine();
 		word = word.toUpperCase();	
 		
-		//test
-//		String test = "aaaBbbCccceeetttGGGdddFff";
-//		String word = test;
-//		word = word.toUpperCase();
-		//test end
-		
 		// 입력된 알파벳과 개수를 map 형태로 저장
-		Map<Character,Integer> map = new HashMap<>();
+		Map<Character,Integer> map = new HashMap<>(26);
 		for(int i=0;i<word.length();i++){
 			char alp = word.charAt(i);
-			if(map.get(alp)==null){
-				map.put(alp, 1);
-			}else{
+			if(map.containsKey(alp)){
 				map.put(alp, map.get(alp)+1);
+			}else{
+				map.put(alp, 1);
+				
 			}
 		}
 //		for (char key : map.keySet()) {//프린트용
 //			System.out.println(key+" "+map.get(key)); 
 //		}
+		
 		//map의 최대 value를 선정
 		Map.Entry<Character, Integer> maxEntry = null;
 		for (Map.Entry<Character, Integer> entry: map.entrySet()) {
@@ -36,7 +34,8 @@ public class WordStudy {
 				maxEntry = entry;	
 			}
 		}
-		//System.out.println("maxEntry : "+maxEntry);
+		
+//		System.out.println("maxEntry : "+maxEntry);
 		
 		// map 에서 최대 값과 같은 값을 갖고있는 키값 카운팅
 		int count = 0;
@@ -51,6 +50,7 @@ public class WordStudy {
 		}else{
 			System.out.println("?");
 		}
+
 	}
 }
 

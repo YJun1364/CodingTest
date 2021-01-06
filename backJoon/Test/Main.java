@@ -1,17 +1,19 @@
 package test;
 import java.lang.*;
+import java.util.Scanner;
 public class Main{
-    public static void main(String[] args){
-       boolean [] arr = new boolean [3];
-       for(int i=0;i<3;i++){
-    	   System.out.println(arr[i]);
-       }
-    }
+	public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+		String st = sc.nextLine();
+		
+		System.out.println(st.length());
+	}
 }
+
 
 /*public class Main {
 	public static void main(String[] args) {
-		
+
 		Scanner sc = new Scanner(System.in);
 									// Q. 45분 일찍 알람 설정하기
 		int h = sc.nextInt();
@@ -29,9 +31,9 @@ public class Main{
 				newM = (((h*60)+m)-45)%60;  // 총 나온 분을 60으로 나눈 몫을 구해 남은 분이 총 몇분이 나오는지 계산
 			}
 		}
-		
+
 		System.out.print(newH + " " + newM);
 	}
 }
-*/
+ */
 //Hello World! 출력하기
