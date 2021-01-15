@@ -12,12 +12,12 @@ public class ArrayList {
 			
 			Object[] tmp = elementData;
 			elementData = new Object[size*3];
-			System.out.println("확장"+" "+elementData.length);
+			//System.out.println("확장"+" "+elementData.length);
 			for(int i=0; i<tmp.length;i++){
 				elementData[i] = tmp[i];
 			}  
 		}
-		System.out.println("length"+elementData.length);
+		//System.out.println("length"+elementData.length);
 	}
 	
 	public boolean addLast(Object element) {
