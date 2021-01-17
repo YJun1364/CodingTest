@@ -8,7 +8,7 @@
   
   * BackJoon
   
-  [step1 : 출력](https://github.com/YJun1364/CodingTest/tree/main/backJoon/step1_print)  [step2 : if문](https://github.com/YJun1364/CodingTest/tree/main/backJoon/step2_if)    [step3 : for문](https://github.com/YJun1364/CodingTest/tree/main/backJoon/step3_for)
+  [step1 : 출력](https://github.com/YJun1364/CodingTest/tree/main/backJoon/step1_print)　　　[step2 : if문](https://github.com/YJun1364/CodingTest/tree/main/backJoon/step2_if)    [step3 : for문](https://github.com/YJun1364/CodingTest/tree/main/backJoon/step3_for)
   <br>
   [step4 : while문](https://github.com/YJun1364/CodingTest/tree/main/backJoon/step4_while)
   <br>
