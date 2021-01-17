@@ -1,13 +1,12 @@
 # CodingTest
 코딩테스트 연습문제
 
-  Programmers
+    Programmers
   
-      [step1 : Level 1](https://github.com/YJun1364/CodingTest/tree/main/programmers/step1)
+  [step1 : Level 1](https://github.com/YJun1364/CodingTest/tree/main/programmers/step1)
   
   
-  
-BackJoon
+    BackJoon
   
   [step1 : 출력](https://github.com/YJun1364/CodingTest/tree/main/backJoon/step1_print)
   <br>
