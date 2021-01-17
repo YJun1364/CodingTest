@@ -1,10 +1,15 @@
 # CodingTest
 코딩테스트 연습문제
 
+  Programmers
+  
+  [step1 : Level 1](https://github.com/YJun1364/CodingTest/tree/main/programmers/step1)
+  
+  
 BackJoon
   
   [step1 : 출력](https://github.com/YJun1364/CodingTest/tree/main/backJoon/step1_print)
-  
+  <br>
   [step2 : if문](https://github.com/YJun1364/CodingTest/tree/main/backJoon/step2_if)
   <br>
   [step3 : for문](https://github.com/YJun1364/CodingTest/tree/main/backJoon/step3_for)
@@ -18,6 +23,3 @@ BackJoon
   [step7 : String](https://github.com/YJun1364/CodingTest/tree/main/backJoon/step7_String)
    <br>
   [step8 : BasicMath](https://github.com/YJun1364/CodingTest/tree/main/backJoon/step8_BasicMath)
-  
-  Programmers
-  [step1 : Level 1](https://github.com/YJun1364/CodingTest/tree/main/programmers/step1)
