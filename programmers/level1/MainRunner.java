@@ -1,16 +1,30 @@
-package step1;
+package level1;
 
 import java.util.*;
 
 public class MainRunner {
 	public static void main(String[] args)	{
-		/*K번째수 Test*/
+		
+		/*3진법뒤집기*/
+		삼진법뒤집기 sam = new 삼진법뒤집기();
+		int n = 125;
+		sam.solution(n);
+		
+		/* 2016년 Test
+		이천십육년 year = new 이천십육년();
+		int a = 5;
+		int b = 1;
+		year.solution(a, b);
+		*/
+		
+		
+		/*K번째수 Test
 		int [] array =new int []{1, 5, 100, 6, 80, 7, 4};
 		int [][] commands = new int [][] {{2, 5, 3}, {4, 4, 1}, {1, 7, 3}};
 		//기댓값 〉	[5, 6, 3]
 		K번째수 k = new K번째수();
 		k.solution(array, commands);
-		
+		*/
 		
 		/*체육복 Test
 		체육복 test = new 체육복();

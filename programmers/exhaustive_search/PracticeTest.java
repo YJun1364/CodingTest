@@ -44,7 +44,7 @@ public class PracticeTest {// 모의고사
 		int randomAnswer4 = (int)(Math.random() * 5 + 1);
 		int randomAnswer5 = (int)(Math.random() * 5 + 1);
 		//System.out.println(randomAnswer1+"/"+randomAnswer2);
-		
+
 		int q = (int)(Math.random() * 50 +1);
 		ArrayList<Integer> answer = new ArrayList<Integer>(5);
 		//System.out.println(q);
