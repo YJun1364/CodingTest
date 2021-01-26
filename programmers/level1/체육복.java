@@ -3,9 +3,18 @@ package level1;
 import java.util.Arrays;
 
 public class 체육복 {
+	public static void main(String[] args) {
+		체육복 test = new 체육복();
+		int n = 5;
+		int [] lost = {1,2,4,5};
+		int [] reserve = {3,4};
+		System.out.println(test.solution(n, lost, reserve));
+	}
+	
 	public  체육복(){
 
 	}
+	
 	public int solution(int n, int[] lost, int[] reserve) {
 		// n : 전체 학생수 	lost : 체육복 잃어버린 사람		reserve : 여분의 체육복 소유자
 		int answer = 0;

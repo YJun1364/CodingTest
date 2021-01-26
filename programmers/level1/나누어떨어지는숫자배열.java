@@ -3,9 +3,17 @@ package level1;
 import java.util.ArrayList;
 
 public class 나누어떨어지는숫자배열 {
+	public static void main(String[] args) {
+		나누어떨어지는숫자배열 div = new 나누어떨어지는숫자배열();
+		int [] arr = {5, 9, 7, 10};
+		int divisor = 5;
+		System.out.println(div.solution(arr, divisor));
+	}
+	
 	public 나누어떨어지는숫자배열(){
 		
 	}
+	
     public ArrayList<Integer> solution(int[] arr, int divisor) {
         ArrayList<Integer> answer = new ArrayList<>();
         for(int value : arr){

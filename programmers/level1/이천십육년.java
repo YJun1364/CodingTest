@@ -1,9 +1,17 @@
 package level1;
 
 public class 이천십육년 {
+	public static void main(String[] args) {
+		이천십육년 year = new 이천십육년();
+		int a = 5;
+		int b = 1;
+		year.solution(a, b);
+	}
+	
 	public 이천십육년(){
 
 	}   
+	
 	public String solution(int a, int b) {
 		// a : 월 	b : 일		1월 1일 은 금요일 일때 a월 b일 의  요일 리턴하기  (SUN,MON,TUE,WED,THU,FRI,SAT)
 		String answer = "";

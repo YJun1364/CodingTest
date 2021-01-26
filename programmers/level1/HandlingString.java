@@ -1,6 +1,11 @@
 package level1;
 
 public class HandlingString {
+	public static void main(String[] args) {
+		HandlingString hs = new HandlingString();
+		String s = "1+23ASDFQWefasdfqwer";
+		hs.solution(s);
+	}
 	public HandlingString(){
 
 	}

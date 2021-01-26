@@ -1,9 +1,16 @@
 package level1;
 
+import java.util.Arrays;
 import java.util.Iterator;
 import java.util.TreeSet;
 
 public class 두개뽑아서더하기 {
+	public static void main(String[] args) {
+		int [] numbers = new int[]{2, 1, 3, 4, 1};
+		두개뽑아서더하기 two = new 두개뽑아서더하기();
+		System.out.println(Arrays.toString(two.solution(numbers)));
+	}
+	
 	public int[] solution(int[] numbers) {
 		TreeSet<Integer> set = new TreeSet<>(); //중복을 걸러주는 역할
 		for(int i=0;i<numbers.length;i++){

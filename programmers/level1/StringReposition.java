@@ -3,6 +3,12 @@ package level1;
 import java.util.Arrays;
 
 public class StringReposition {
+	public static void main(String[] args) {
+		StringReposition sr = new StringReposition();
+		String s = "Zbcdefg";
+		System.out.println(sr.solution(s));
+	}
+	
 	public StringReposition() {
 		
 	}

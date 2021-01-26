@@ -3,9 +3,16 @@ package level1;
 import java.util.ArrayList;
 
 public class 모의고사 {
+	public static void main(String[] args) {
+		모의고사 test = new 모의고사();
+		int [] answers = new int[]{3, 3, 1, 1, 2, 2, 4, 4, 5, 5};
+		System.out.println(test.solution(answers));
+	}
+	
 	public 모의고사(){
 
 	}
+	
 	public ArrayList<Integer> solution(int[] answers) {
 		ArrayList<Integer> answer = new ArrayList<>();
 	

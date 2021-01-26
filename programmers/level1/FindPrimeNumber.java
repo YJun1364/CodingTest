@@ -1,6 +1,11 @@
 package level1;
 
 public class FindPrimeNumber {
+	public static void main(String[] args) {
+		FindPrimeNumber fpn = new FindPrimeNumber();
+		int n=10;
+		System.out.println(fpn.solution(n));
+	}
 	public FindPrimeNumber() {
 		// TODO Auto-generated constructor stub
 	}

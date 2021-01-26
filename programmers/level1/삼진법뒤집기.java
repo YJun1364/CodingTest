@@ -3,9 +3,16 @@ package level1;
 import java.util.ArrayList;
 
 public class 삼진법뒤집기 {
+	public static void main(String[] args) {
+		삼진법뒤집기 sam = new 삼진법뒤집기();
+		int n = 125;
+		sam.solution(n);
+	}
+
 	public 삼진법뒤집기(){
 
 	}
+
 	public int solution(int n) {
 		int remainder=0;
 		int answer = 0;
