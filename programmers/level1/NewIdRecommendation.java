@@ -6,36 +6,31 @@ import java.util.ArrayList;
 public class NewIdRecommendation {
 	public static void main(String[] args) {
 		NewIdRecommendation nir = new NewIdRecommendation();
-		String new_id = "z-+.^.";
+		String new_id = "...!@.BaT#*..y.abcdefgh.ijklm";
 		//System.out.println("answer:"+nir.solution(new_id));
 		//nir.regex(new_id);
 		nir.regexAndSb(new_id);
-		
+
 	}
-	
+
 	public String regexAndSb(String new_id){
 		String answer = "";
 		StringBuffer sb = new StringBuffer();
-		sb.append(new_id.toLowerCase().replaceAll("[^-_.a-z0-9]", "").replaceAll("[.]{2,}",".").replaceAll("^[.]|[.]$", ""));
-		
+		sb.append(new_id.toLowerCase().replaceAll("[^-_.a-z0-9]", "").replaceAll("[.]{2,}",".").replaceAll("^[.]|[.]$", "")); // 1,2,3,4
 		answer = sb.toString();
+		answer = (answer.isEmpty())? "a" : answer;  // 5. 빈문자열이라면  a 대입
+		answer = (answer.length()>15) ? answer.substring(0,15) : answer; // 6. 15자리 이상이면 잘라주기
+		answer = answer.replaceAll("^[.]|[.]$", ""); //7. 양끝 마침표 자르기
 
-		if(answer.isEmpty()) // 5. 빈문자열이라면  a 대입
-			answer = "a";
-		if(answer.length()>15){ // 6. 길다면 15자리로 자르고 양끝 마침표 검사 
-			answer = answer.substring(0,15);
-			answer = answer.replaceAll("^[.]|[.]$", "");
-		}
-		
 		if(answer.length()<3){ // 7. 3보다 길이가 작다면 마지막 문자로 3개 까지 길이 늘리기
-			for(int i=answer.length();i<3;i++){
+			while(answer.length()<3){
 				answer+=answer.charAt(answer.length()-1);
-			}
-		}System.out.println(answer);
+			}// for
+		}// if
 
 		return answer;
 	}
-	
+
 	public String regex(String new_id){
 		String answer = "";
 		StringBuffer sb = new StringBuffer();
@@ -49,7 +44,7 @@ public class NewIdRecommendation {
 			new_id = new_id.substring(0,15);
 			new_id = new_id.replaceAll("^[.]|[.]$", "");
 		}
-		
+
 		if(new_id.length()<3){ // 7. 3보다 길이가 작다면 마지막 문자로 3개 까지 길이 늘리기
 			for(int i=new_id.length();i<3;i++){
 				new_id+=new_id.charAt(new_id.length()-1);
@@ -58,38 +53,38 @@ public class NewIdRecommendation {
 		answer=new_id;
 		return answer;
 	}
-	
+
 	public String solution(String new_id) {
 		String answer = "";
 		ArrayList<Character> list = new ArrayList<>();
-		
+
 		new_id=new_id.toLowerCase(); // 1단계 소문자로 치환
-		
+
 		for(int i = 0; i < new_id.length(); i++){
 			list.add(new_id.charAt(i));
 		}
-		
+
 		for(int i = list.size()-1; i >= 0 ; i--){ //2단계 특수문자 제거
 			char getList = list.get(i);		
-			
+
 			getList = (Character.isLowerCase(getList)||Character.isDigit(getList)||getList=='.'||getList=='_'||getList=='-') ? getList : list.remove(i);		
-			
+
 		}		
 		//print(2,list);
-		
+
 		for(int i = list.size()-1; i > 0 ; i--){ // 3단계 마침표 중복 제거
 			char getList = list.get(i);
 			getList = (getList=='.' && list.get(i-1)=='.') ? list.remove(i) : getList; 
 		}
 		//print(3,list);
-		
+
 		removeDot(list);// 4단계	처음과 끝 마침표 제거		
 		//print(4,list);
-		
+
 		if(list.isEmpty()) // 5단계 빈문자열의 경우 a삽입
 			list.add('a');
 		//print(5,list);
-		
+
 		ArrayList<Character> tmp = new ArrayList<>();
 		if(list.size()>15){ // 6단계 15자리이내로 정리 후 처음과 끝 마침표 제거  			
 			for(int i = 0; i < 15; i++){
@@ -100,35 +95,35 @@ public class NewIdRecommendation {
 			list = tmp;
 		}
 		//print(6,list);
-		
+
 		if(list.size()<3){
 			for(int i = list.size(); i <3 ; i++){
-			list.add(list.get(list.size()-1));
+				list.add(list.get(list.size()-1));
 			}
 		}
 		//print(7,list);
 		for(int i = 0; i < list.size(); i++){
 			answer+=list.get(i);
 		}
-		
+
 		return answer;
 	}
-	
+
 	public ArrayList<Character> removeDot(ArrayList<Character> list){
 		if(list.size()>1){
-		if(list.get(0)=='.') // 4단계 처음이나 끝에 위치한 마침표 제거
-			list.remove(0);
-		if(list.get(list.size()-1)=='.')
-			list.remove(list.size()-1);
+			if(list.get(0)=='.') // 4단계 처음이나 끝에 위치한 마침표 제거
+				list.remove(0);
+			if(list.get(list.size()-1)=='.')
+				list.remove(list.size()-1);
 		}else if(list.get(0)=='.'){
 			list.remove(0);
-			
+
 		}
 		return list;
 	}
-	
+
 	public void print(int i,ArrayList<Character> list){
-		 System.out.println(i+"단계:"+list.toString());
+		System.out.println(i+"단계:"+list.toString());
 	}
 }
 //정규 표현식을 공부해보자
