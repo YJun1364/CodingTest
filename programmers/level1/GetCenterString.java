@@ -1,13 +1,13 @@
 package level1;
 
-public class 가운데글자가져오기 {
+public class GetCenterString {
 	public static void main(String[] args) {
-		가운데글자가져오기 center = new 가운데글자가져오기();
+		GetCenterString center = new GetCenterString();
 		String s="abcd";
 		System.out.println(center.solution(s));
 	}
 
-	public 가운데글자가져오기(){
+	public GetCenterString(){
 
 	}
 

@@ -1,14 +1,14 @@
 package level1;
 
-public class ¿Ã√µΩ ¿∞≥‚ {
+public class TwoThousandSixteenYear {
 	public static void main(String[] args) {
-		¿Ã√µΩ ¿∞≥‚ year = new ¿Ã√µΩ ¿∞≥‚();
+		TwoThousandSixteenYear year = new TwoThousandSixteenYear();
 		int a = 5;
 		int b = 1;
 		year.solution(a, b);
 	}
 	
-	public ¿Ã√µΩ ¿∞≥‚(){
+	public TwoThousandSixteenYear(){
 
 	}   
 	

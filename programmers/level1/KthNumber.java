@@ -3,12 +3,12 @@ package level1;
 import java.util.ArrayList;
 
 
-public class K번째수 {
+public class KthNumber {
 	public static void main(String[] args) {
 		int [] array =new int []{1, 5, 100, 6, 80, 7, 4};
 		int [][] commands = new int [][] {{2, 5, 3}, {4, 4, 1}, {1, 7, 3}};
 		//기댓값 〉	[5, 6, 3]
-		K번째수 k = new K번째수();
+		KthNumber k = new KthNumber();
 		k.solution(array, commands);
 	}
 	

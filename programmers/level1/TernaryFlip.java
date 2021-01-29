@@ -2,14 +2,14 @@ package level1;
 
 import java.util.ArrayList;
 
-public class 삼진법뒤집기 {
+public class TernaryFlip {
 	public static void main(String[] args) {
-		삼진법뒤집기 sam = new 삼진법뒤집기();
+		TernaryFlip sam = new TernaryFlip();
 		int n = 125;
 		sam.solution(n);
 	}
 
-	public 삼진법뒤집기(){
+	public TernaryFlip(){
 
 	}
 

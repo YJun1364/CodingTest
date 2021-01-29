@@ -2,16 +2,16 @@ package level1;
 
 import java.util.Arrays;
 
-public class Ã¼À°º¹ {
+public class GymSuit {
 	public static void main(String[] args) {
-		Ã¼À°º¹ test = new Ã¼À°º¹();
+		GymSuit test = new GymSuit();
 		int n = 5;
 		int [] lost = {1,2,4,5};
 		int [] reserve = {3,4};
 		System.out.println(test.solution(n, lost, reserve));
 	}
 	
-	public  Ã¼À°º¹(){
+	public  GymSuit(){
 
 	}
 	

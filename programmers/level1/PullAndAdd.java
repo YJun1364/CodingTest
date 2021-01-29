@@ -4,10 +4,10 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.TreeSet;
 
-public class 두개뽑아서더하기 {
+public class PullAndAdd {
 	public static void main(String[] args) {
 		int [] numbers = new int[]{2, 1, 3, 4, 1};
-		두개뽑아서더하기 two = new 두개뽑아서더하기();
+		PullAndAdd two = new PullAndAdd();
 		System.out.println(Arrays.toString(two.solution(numbers)));
 	}
 	
