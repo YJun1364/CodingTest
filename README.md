@@ -1,5 +1,5 @@
 # CodingTest
-##코딩테스트 연습문제
+## 코딩테스트 연습문제
 
   * Programmers
   
